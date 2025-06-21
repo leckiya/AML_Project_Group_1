@@ -1,0 +1,13 @@
+checkpoints/
+nutrition5k_dataset
+nutrition5k_dataset.zip
+processed_data/
+visualizations/
+logs/
+results/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
