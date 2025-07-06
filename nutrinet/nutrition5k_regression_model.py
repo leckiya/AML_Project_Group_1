@@ -917,6 +917,10 @@ def main():
     model.load_state_dict(torch.load('baseline_checkpoint/best_baseline_model.pth'))
     print('[DEBUG] Baseline training complete. Best model loaded. Proceeding to evaluation and specific dish test.')
     
+    # Save the model to model.pth
+    torch.save(model.state_dict(), 'model.pth')
+    print('Model saved to model.pth')
+    
     # Final evaluation with best model
     print("[DEBUG] About to run final evaluation block...")
     criterion = nn.MSELoss()
